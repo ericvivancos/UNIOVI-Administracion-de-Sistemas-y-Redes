@@ -1,0 +1,16 @@
+https://asr.uniovi.es/asr/
+# dnf -y upgrade | Actualiza teniendo en cuenta que existe un adaptador de red
+# reboot | Reinicia el equipo
+# poweroff | Apaga el equipo
+# ls /dev/sd* Nos muestran los discos sólidps
+# lsblk Nos permite listar los dispositivos de entrada y salida en bloque
+# gdisk sdb Partición del disco
+# mkfs -t ext /dev/sdb1 makefilesystem en ext
+# mkfs -t xfs /dev/sdb2 makefilesystem en xfs
+# mkdir
+#mount muestra detalles de montaje
+# df muestra los espacios disponiblñes
+
+#comandos gdisk
+# p muestra detalles del disco
+# n crea particion

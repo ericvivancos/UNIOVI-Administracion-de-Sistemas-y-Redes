@@ -1,0 +1,25 @@
+https://asr.uniovi.es/asr/
+# dnf -y upgrade | Actualiza teniendo en cuenta que existe un adaptador de red
+# reboot | Reinicia el equipo
+# poweroff | Apaga el equipo
+# ls /dev/sd* Nos muestran los discos sólidos
+# lsblk Nos permite listar los dispositivos de entrada y salida en bloque
+# gdisk sdb Partición del disco
+# mkfs -t ext /dev/sdb1 makefilesystem en ext
+# mkfs -t xfs /dev/sdb2 makefilesystem en xfs
+# mkdir Crea un directorio
+# mount muestra detalles de montaje
+# df muestra los espacios disponiblñes
+
+#comandos gdisk
+# p muestra detalles del disco
+# n crea particion
+
+El sistema operativo intercepta las peticiones de escitura de un bloque en disco.
+El disco siempre mantiene lo cambios actualizados
+La instantánes formada por los bloques que NO están en el fichero de instantánea + lo de instantánea
+El fichero de instantánea debe esta en otra unidad distinta o partición
+En el caso peor se cambian todos los bloques y puede en teoría ser el tamaño del disco, pero en la práctica no suele pasar cambiando sobre un 20%
+Para hacer instantáneas en Linux debemos tener LVM, En windows es parecido el punto de restauración
+Algunos proveedores d e Internet de VPS o VDS permiten crear instantáneas
+Se puede aplicarn SNAPSHOTS en más casos, por ejemplo en ficheros podemos consdiderarlo como un conjutno de bloques
